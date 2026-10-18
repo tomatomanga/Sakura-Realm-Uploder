@@ -1,1 +1,80 @@
+* {
+    box-sizing: border-box;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+    width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #08090f;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.text-sakura-glow {
+    background: linear-gradient(135deg, #ffffff 0%, #ffe4ed 40%, #ff5c8a 80%, #ff3b75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 0 8px rgba(255, 59, 117, 0.4));
+}
+
+.glass-card {
+    background: rgba(20, 23, 38, 0.85);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.premium-custom-select {
+    background-color: #0d0f1a;
+    border: 1px solid rgba(255, 59, 117, 0.3);
+    color: #ffe4ed;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.premium-custom-select:active {
+    border-color: #ff3b75;
+    box-shadow: 0 0 15px rgba(255, 59, 117, 0.4);
+    transform: scale(0.98);
+}
+
+.custom-option-item {
+    progress { transition: all 0.2s ease; }
+}
+
+.custom-option-item:active {
+    background-color: rgba(255, 59, 117, 0.3);
+}
+
+#sakuraCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #08090f;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff3b75;
+    border-radius: 8px;
+}
+
+.hidden {
+    display: none !important;
+}
 
